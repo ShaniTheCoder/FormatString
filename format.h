@@ -36,8 +36,8 @@ void format_impl(std::ostringstream &oss, const std::string &fmt, size_t pos,
 
 // Entry point for format function
 template <typename... Args>
-std::string format(const std::string &fmt, const Args &...args) {
+void format(const std::string &fmt, const Args &...args) {
   std::ostringstream oss;
   format_impl(oss, fmt, 0, args...);
-  return oss.str();
+  std::cout << oss.str();
 }
