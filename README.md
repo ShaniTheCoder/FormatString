@@ -11,7 +11,7 @@ profession = "developer"
 std::cout<<name<<" is "<<age<<" Years old"<<profession;
 ```
 
-above you can see how much if `<<` is used it decreases the efficiency
+above you can see how much `<<` is used it decreases the efficiency
 it can be simplified with format
 
 ```cpp
@@ -38,5 +38,5 @@ int main() {
 Output:
 
 ```bash
->>> Hello i am  ShaniTheCoder, this is an Example of How you can use  Format.h formate function
+>>> Hello i am  ShaniTheCoder, this is an Example of How you can use  Format.h format function
 ```
