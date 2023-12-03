@@ -20,7 +20,7 @@ void format_impl(std::ostringstream &oss, const std::string &fmt, size_t pos,
     // Process the argument
     size_t end_brace = fmt.find('}', next_brace + 1);
     if (end_brace != std::string::npos) {
-      oss << ": " << std::boolalpha << arg;
+      oss << " " << std::boolalpha << arg; // here adds a white space
 
       // Continue with the rest of the format string and remaining arguments
       format_impl(oss, fmt, end_brace + 1, args...);
