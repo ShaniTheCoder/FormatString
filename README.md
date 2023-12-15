@@ -11,8 +11,7 @@ profession = "developer"
 std::cout<<name<<" is "<<age<<" Years old"<<profession;
 ```
 
-above you can see how much `<<` is used it decreases the efficiency
-it can be simplified with format
+Below is corresponding code for `cout` using `format()`
 
 ```cpp
 format("{0} us {1} years old {2}",name,age,profession);
