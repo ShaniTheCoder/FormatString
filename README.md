@@ -28,8 +28,8 @@ that's now you just have to call format() function.
 
 using namespace std;
 int main() {
-  format("Hello i am {0}, this is an Example of How you can use {1} ",
-             "ShaniTheCoder", "Format.h format function");
+  format("Hello i am {0} I am {1} years old, this is an Example of How you can use {2} ",
+             "ShaniTheCoder",18, "Format.h format function");
   return 0;
 }
 ```
@@ -37,5 +37,5 @@ int main() {
 Output:
 
 ```bash
->>> Hello i am  ShaniTheCoder, this is an Example of How you can use  Format.h format function
+>>> Hello i am  ShaniTheCoder I am 18 years old, this is an Example of How you can use  Format.h format function
 ```
