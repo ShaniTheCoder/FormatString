@@ -4,9 +4,6 @@
 #include <string>
 
 // Base case of recursion: No arguments left to process
-void format_impl(std::ostringstream &oss, const std::string &fmt, size_t pos) {
-  oss << fmt.substr(pos);
-}
 
 // Recursive function to process arguments one by one
 template <typename T, typename... Args>
@@ -40,4 +37,8 @@ void format(const std::string &fmt, const Args &...args) {
   std::ostringstream oss;
   format_impl(oss, fmt, 0, args...);
   std::cout << oss.str();
+}
+template <typename... Args>
+void format_impl(std::ostringstream &oss, const std::string &fmt, size_t pos) {
+  oss << fmt.substr(pos);
 }
